@@ -5,87 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novik Denis</title>
+    <link rel="stylesheet" href="./css/icon-fonts.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about_me">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="nav">
+                <ul class="flex flex-content-center">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about_me">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <h1>Denis Novik</h1>
-            <img src="../Figma/img/photox940.jpg" alt="denis novik photo">
+        <section class="hero">
+            <div class="container">
+                <h1>Denis Novik</h1>
+                <img src="./img/photox940.jpg" alt="denis novik photo" class="full-width">
+            </div>
         </section>
-        <section id="about_me">
-            <h3>About me</h3>
-            <p>Hi, I'm Denis – UX/UI designer from Minsk.
-                I'm interested in design and everything connected with it.</p>
-            <p>I'm studying at courses "Web and mobile design 
-                interfaces" in IT-Academy.</p>
-            <p>Ready to implement excellent projects
-                with wonderful people.</p>
+        <section id="about-me" class="about-me">
+            <div class="container about-me">
+                <h3 class="title-abou-me">About me</h3>
+                <p class="description-1">Hi, I'm Denis – UX/UI designer from Minsk.<br>
+                    I'm interested in design and everything connected with it.</p>
+                <p class="description-2">I'm studying at courses "Web and mobile design <br>
+                    interfaces" in IT-Academy.</p>
+                <p class="description-3">Ready to implement excellent projects <br>
+                    with wonderful people.</p>
+            </div>
         </section>
-        <section id="skills">
-            <h3>Skills</h3>
-            <p>I work in such programs as</p>
-            <div>
-                <div> 
-                    <img src="../Figma/img/skills/Ps.svg" alt="photo shop icon">
-                    <h5>Adobe Photoshop</h5>
-                    <img src="../Figma/img/skills/rating.jpg" alt="two stars">
-                </div>
-                <div>
-                    <img src="../Figma/img/skills/Ai.svg" alt="adobe illustrator icon">
-                    <h5>Adobe Illustrator</h5>
-                    <img src="../Figma/img/skills/rating2.jpg" alt="three stars">
-                </div>
-                <div>
-                    <img src="../Figma/img/skills/Ae.svg" alt="adobe after effects icon">
-                    <h5>Adobe After Effects</h5>
-                    <img src="../Figma/img/skills/rating3.jpg" alt="four stars">
-                </div>
-                <div>
-                    <img src="../Figma/img/skills/Figma.svg" alt="figma icon">
-                    <h5>Figma</h5>
-                    <img src="../Figma/img/skills/rating4.jpg" alt="five stars">
+        <section id="skills" class="skills">
+            <div class="container">
+                <h3 class="skills-title">Skills</h3>
+                <p class="skills-description">I work in such programs as</p>
+                <div class="flex flex-content-between">
+                    <div class="skills-programm"> 
+                        <img src="./img/skills/Ps.svg" alt="photo shop icon" class="img-programm">
+                        <h5>Adobe <br>  Photoshop</h5>
+                        <img src="./img/skills/rating.jpg" alt="two stars" class="img-stars">
+                    </div>
+                    <div class="skills-programm">
+                        <img src="./img/skills/Ai.svg" alt="adobe illustrator icon" class="img-programm">
+                        <h5>Adobe <br>  Illustrator</h5>
+                        <img src="./img/skills/rating2.jpg" alt="three stars" class="img-stars">
+                    </div>
+                    <div class="skills-programm">
+                        <img src="./img/skills/Ae.svg" alt="adobe after effects icon" class="img-programm">
+                        <h5>Adobe <br> After Effects</h5>
+                        <img src="./img/skills/rating3.jpg" alt="four stars" class="img-stars">
+                    </div>
+                    <div class="skills-programm">
+                        <img src="./img/skills/Figma.svg" alt="figma icon" class="img-programm">
+                        <h5 class="short--description">Figma</h5>
+                        <img src="./img/skills/rating4.jpg" alt="five stars" class="img-stars">
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="portfolio">
-            <h3>Portfolio</h3>
-            <div>
-                <img src="../Figma/img/portfolio/Fashion-Store.jpg" alt="fashion web store image">
-                <a href="#">Online fashion store - Homepage</a>
-            </div>
-            <div>
-                <img src="../Figma/img/portfolio/reebok_web.jpg" alt="reebok web store image">
-                <a href="#">Reebok Store - Concept</a>
-            </div>
-            <div>
-                <img src="../Figma/img/portfolio/braun-landing.jpg" alt="braun landing image">
-                <a href="#">Braun Landing Page - Concept</a>
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h3 class="portfolio-title">Portfolio</h3>
+                <div>
+                    <img src="./img/portfolio/Fashion-Store.jpg" alt="fashion web store image">
+                    <a  class="links--portfolio" href="#">Online fashion store - Homepage</a>
+                </div>
+                <div>
+                    <img src="./img/portfolio/reebok_web.jpg" alt="reebok web store image">
+                    <a class="links--portfolio" href="#">Reebok Store - Concept</a>
+                </div>
+                <div>
+                    <img src="./img/portfolio/braun-landing.jpg" alt="braun landing image">
+                    <a class="links--portfolio" href="#">Braun Landing Page - Concept</a>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="">
         <section id="contacts">
-            <h3>Contacts</h3>
-            <p>Want to know more or just chat? You are welcome!</p>
-            <button name="button">Send message</button>
-            <section>
-                <a href=""><img src="../Figma/img/social icons/linkedin.svg" alt="linkedin icon"></a>
-                <a href=""><img src="../Figma/img/social icons/instagram.svg" alt="instagram icon"></a>
-                <a href=""><img src="../Figma/img/social icons/dribbble.svg" alt="dribbble icon"></a>
-                <a href=""><img src="../Figma/img/social icons/behance.svg" alt="behance icon"></a>
-            </section>
-            <p>Like me on LinkedIn, Instagram, Behance, Dribble</p>
+            <div class="contacts container flex flex-content-center">
+                <h3 class="footer-title">Contacts</h3>
+                <p class="footer-text">Want to know more or just chat? You are welcome!</p>
+                <a href="" class="footer-button flex"> Seend message</a>
+                <section class="social-icons flex">
+                    <ul class="flex flex-content-center">
+                        <li><a href=""><i class="fa-brands fa-linkedin-in social-icons-size"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-behance"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-dribbble"></i></a></li>
+                    </ul>
+                </section>
+                <p class="liked-me">Like me on LinkedIn, Instagram, Behance, Dribble</p>
+            </div>
         </section>
     </footer>
 </body>
